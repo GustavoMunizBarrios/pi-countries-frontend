@@ -3,7 +3,7 @@ import axios from 'axios';
 
 const instance = axios.create({
     // baseURL: 'http://localhost:3001/'
-    baseURL: 'https://pi-countries-production-b421.up.railway.app'
+    baseURL: 'https://pi-countries-production-b421.up.railway.app/'
   });
 
 export const getCountries = () => {
