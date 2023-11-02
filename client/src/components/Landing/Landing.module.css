@@ -1,0 +1,647 @@
+.landing {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+}
+.background {
+    position: absolute;
+    top: 47%;
+    right: 65%;
+    z-index: 0;
+    width: 1000px;
+    height: 500px;
+    rotate: 45deg;
+}
+.background02 {
+    position: absolute;
+    top: 2%;
+    right: -16%;
+    z-index: 0;
+    width: 1000px;
+    height: 500px;
+    rotate: 45deg;
+}
+/* ********************************************************************************** */
+/* ********************* Links de linkedIn y github ****************************** */
+/* ********************************************************************************** */
+.links {
+/*    display: flex;
+   flex-direction: row; */
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 60px;
+   width: 130px;
+   position: absolute;
+   top: 5%;
+   right: 90%;
+   
+  }
+.link_img{
+    width: 44px;
+}
+.link_img:hover {
+    width: 47px;
+}
+/* ********************************************************************************** */
+/* ********************* Titulo principal y planeta ****************************** */
+/* ********************************************************************************** */
+.title {
+    font-size: 3rem;
+    text-align: center;
+    margin-left: 200px;
+    margin-bottom: 290px;
+    color: #1e3231;
+    /* color: #FE654F; */
+    letter-spacing: 3px;
+    font-weight: 900;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title h1 {
+    margin-bottom: 100px;
+    z-index: 5;
+}
+.imgEarth {
+    width: 600px;
+    position: absolute;
+    top: 24%;
+    right: 12%;
+    rotate: 10deg;
+
+    --m:
+    radial-gradient(circle farthest-side at right,#000 99%,#0000) 
+      0 100%/48% 100% no-repeat,
+    radial-gradient(circle farthest-side at left ,#000 99%,#0000) 
+      100% 0/48% 100% no-repeat;
+    -webkit-mask: var(--m);
+          mask: var(--m);
+    transition: .3s linear;
+}
+
+.imgEarth:hover {
+    /* width: 610px; */
+
+    -webkit-mask-position: 7.5% 50%,92.5% 50%;
+    mask-position: 7.5% 50%,92.5% 50%;
+filter: grayscale(0);
+}
+
+/* ********************************************************************************** */
+/* ********************* Banderas*********************** ****************************** */
+/* ********************************************************************************** */
+.flag_img {
+    position: absolute;
+    width: 150px;
+    /* height: 100px; */
+    border-radius: 50px;
+    opacity: 0.5;
+}
+ .flag_img:hover {
+    border-radius: 80px;
+    opacity: 1;
+} 
+.flag_img_kenia {
+    position: absolute;
+    top: 77%;
+    right: 20%;
+}
+.flag_img_mexico {
+    position: absolute;
+    top: 14%;
+    right: 37%;
+}
+.flag_img_sweden {
+    position: absolute;
+    top: 24%;
+    right: 10%;
+}
+.flag_img_france {
+    position: absolute;
+    top: 70%;
+    right: 6%;
+}
+.flag_img_colombia {
+    position: absolute;
+    top: 83%;
+    right: 40%;
+}
+.flag_img_uk {
+    width: 160px !important;
+    position: absolute;
+    top: 54%;
+    right: 40%;
+}
+.flag_img_spain {
+    width: 145px !important;
+    position: absolute;
+    top: 74%;
+    right: 60%;
+}
+.flag_img_argentina {
+    position: absolute;
+    top: 5%;
+    right: 60%;
+}
+.flag_img_usa {
+    position: absolute;
+    top: 85%;
+    right: 80%;
+}
+.flag_img_brazil {
+    width: 145px !important;
+    position: absolute;
+    right: 94%;
+}
+.flag_img_chile {
+    position: absolute;
+    top: -2%;
+    right: 8%;
+}
+.flag_img_china {
+    position: absolute;
+    top: 60%;
+    right: 79%;
+}
+.flag_img_cuba {
+    position: absolute;
+    width: 150px !important;
+    height: 80px !important;
+    border-radius: 70px !important;
+    top: 16%;
+    right: 87%;
+    z-index: 0;
+}
+/* ********************************************************************************** */
+/* ********************* Botón Explore *************** ****************************** */
+/* ********************************************************************************** */
+a {
+    text-decoration:none;
+}
+/* svg {
+    fill:  #F1F0EE;
+} */
+.button {
+    width: 260px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #FE654F;
+    border-radius: 30px;
+    color:  #1E3231;
+    font-size: 1.4rem;
+    font-weight: 700;
+    border: none;
+    letter-spacing: 1px;
+    position: relative;
+    cursor: pointer;
+    transition-duration: .2s;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.116);
+    padding-left: 8px;
+    transition-duration: .5s;
+}
+  
+.svgIcon {
+height: 35px;
+transition-duration: 1.5s;
+fill: #1E3231;
+
+}
+  
+.bell path {
+fill:  #F1F0EE;
+}
+
+.button:hover {
+/* background-color: #39A0ED; */
+box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.116);
+transition-duration: .5s;
+transform: translateY(-3px);
+}
+
+.button:active {
+transform: scale(0.97);
+transition-duration: .2s;
+}
+
+.button:hover .svgIcon {
+transform: rotate(250deg);
+transition-duration: 1.5s;
+}
+/* ********************************************************************************** */
+/* ********************* Media queries *************** ****************************** */
+/* ********************************************************************************** */ 
+  
+@media (max-width: 1628px) {
+    .title {
+        margin-left: 90px;
+        margin-bottom: 200px;
+        font-size: 2.5rem;
+    }
+    .background02 {
+        top: -17%;
+    }
+    .imgEarth {
+        width: 500px;
+    }
+}
+@media (max-width: 1420px) {
+    .imgEarth {
+        width: 400px;
+    }
+    .background02 {
+        top: -37%;
+    }
+    .flag_img_mexico {
+        top: 5%;
+    }
+    .flag_img_cuba {
+        display:none;
+    }
+    .flag_img_chile {
+        display: none;
+    }
+}
+@media (max-width: 1241px) {
+    .title {
+        font-size: 2rem;
+    }
+    .background02 {
+        top:-20%;
+    }
+    .background {
+        top: 27%;
+        right: 55%;
+    }
+    .flag_img {
+        width: 100px;
+    }
+    .links {
+        right: 85%;
+    }
+}
+@media (max-width: 1120px) {
+    .title {
+        margin-left: 0;
+        margin-top: 5%;
+    }
+    .title h1 {
+        margin-bottom: 30px;
+    }
+    .imgEarth {
+        width: 300px;
+        right: 35%;
+        top: 60%;
+    }
+    .landing {
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .background02 {
+        right: -26%;
+    }
+    .flag_img_brazil {
+        display: none;
+    }
+    .flag_img_spain {
+        width: 100px !important;
+    }
+    .flag_img_uk {
+        width: 120px !important;
+        right: 20%;
+    }
+    .flag_img_cuba {
+        width: 110px !important;
+        height: 60px !important;
+    }
+    .flag_img_mexico {
+        top: 30%;
+        right: 67%;
+    }
+    .flag_img_argentina {
+        right: 50%;
+    }
+    .flag_img_france {
+        top: 80%;
+    }
+    .flag_img_kenia {
+        right: 30%;
+    }
+
+}
+@media (max-width: 1000px) {
+    .background02 {
+        width: 750px;
+        height: 375px;
+        top: -10%;
+    }
+    .background {
+        width: 750px;
+        height: 375px;
+        top: 54%;
+    }
+}
+@media (max-width: 870px) {
+    .links {
+        right: 80%;
+        top: 2%;
+        width: 110px;
+    }
+    .link_img {
+        width: 39px;
+    }
+    .imgEarth {
+        right: 30%;
+    }
+}
+/************* TABLET *****************/
+@media (max-width: 810px) and (min-height: 1080px) {
+    /* Coloca tus estilos específicos para 810x1080 aquí */
+    .title {
+        margin-top: 10%;
+    }
+    .background {
+        top: 64%;
+    }
+    .imgEarth {
+        top: 50%;
+    }
+    .flag_img_kenia {
+        display: none;
+    }
+}
+
+  /*************** CELLPHONES **************/
+@media (max-width: 428px) and (min-height: 926px) {
+    .title {
+        margin-bottom: 50px;
+        margin-top: 100px;
+    }
+    .title h1 {
+        font-size: 2.8rem;
+    }
+    .background02 {
+        width: 500px;
+        height: 250px;
+        top: -12%;
+    }
+    .background {
+        width: 500px;
+        height: 250px;
+        top: 74%;
+        right: 40%;
+    }
+    .imgEarth {
+        width: 250px;
+        right: 20%;
+        top: 50%;
+    }
+    .links {
+        right: 65%;
+    }
+    .flag_img_mexico {
+        top: 38%;
+    }
+    .flag_img_chile {
+        top: 40%;
+    }
+    .flag_img_cuba {
+        top: 19%;
+    }
+    .flag_img_kenia {
+        display: none;
+    }
+}
+@media (max-width: 414px) and (min-height: 869px) {
+    .title {
+        margin-bottom: 50px;
+        margin-top: 100px;
+    }
+    .title h1 {
+        font-size: 2.8rem;
+    }
+    .background02 {
+        width: 500px;
+        height: 250px;
+        top: -12%;
+    }
+    .background {
+        width: 500px;
+        height: 250px;
+        top: 74%;
+        right: 40%;
+    }
+    .imgEarth {
+        width: 250px;
+        right: 20%;
+        top: 50%;
+    }
+    .links {
+        right: 65%;
+    }
+    .flag_img_mexico {
+        top: 38%;
+    }
+    .flag_img_chile {
+        top: 40%;
+    }
+    .flag_img_cuba {
+        top: 19%;
+    }
+    .flag_img_kenia {
+        display: none;
+    }
+}
+@media (max-width: 390px) and (min-height: 844px) {
+    .title {
+        margin-bottom: 50px;
+        margin-top: 100px;
+    }
+    .title h1 {
+        font-size: 2.8rem;
+    }
+    .background02 {
+        width: 500px;
+        height: 250px;
+        top: -12%;
+    }
+    .background {
+        width: 500px;
+        height: 250px;
+        top: 74%;
+        right: 40%;
+    }
+    .imgEarth {
+        width: 250px;
+        right: 20%;
+        top: 50%;
+    }
+    .links {
+        right: 65%;
+    }
+    .flag_img {
+        width: 80px;
+    }
+    .flag_img_mexico {
+        top: 45%;
+    }
+    .flag_img_chile {
+        top: 40%;
+    }
+    .flag_img_cuba {
+        top: 19%;
+    }
+    .flag_img_kenia {
+        display: none;
+    }
+    .flag_img_sweden {
+        right: 5%;
+        width: 80px;
+    }
+    .flag_img_uk {
+        right: 8%;
+        width: 90px  !important;
+    }
+    .flag_img_spain {
+        width: 80px !important;
+    }
+}
+@media (max-width: 375px) and (min-height: 812px) {
+    .title {
+        margin-bottom: 50px;
+        margin-top: 100px;
+    }
+    .title h1 {
+        font-size: 2.8rem;
+    }
+    .button {
+        width: 240px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+    .background02 {
+        width: 500px;
+        height: 250px;
+        top: -17%;
+        right: -30%;
+    }
+    .background {
+        width: 500px;
+        height: 250px;
+        top: 70%;
+        right: 40%;
+    }
+    .imgEarth {
+        width: 250px;
+        right: 18%;
+        top: 50%;
+    }
+    .links {
+        right: 65%;
+    }
+    .flag_img {
+        width: 80px;
+    }
+    .flag_img_mexico {
+        top: 45%;
+    }
+    .flag_img_chile {
+        top: 40%;
+    }
+    .flag_img_cuba {
+        top: 19%;
+    }
+    .flag_img_kenia {
+        display: none;
+    }
+    .flag_img_sweden {
+        right: 5%;
+        width: 80px;
+    }
+    .flag_img_uk {
+        right: 8%;
+        width: 90px  !important;
+    }
+    .flag_img_spain {
+        width: 80px !important;
+    }
+    .flag_img_usa {
+        right: 2%;
+    }
+    .flag_img_france {
+        top: 72%;
+    }
+}
+@media (max-width: 360px) and (min-height: 800px) {
+    .title {
+        margin-bottom: 50px;
+        margin-top: 100px;
+    }
+    .title h1 {
+        font-size: 2.8rem;
+    }
+    .button {
+        width: 240px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+    .background02 {
+        width: 500px;
+        height: 250px;
+        top: -17%;
+        right: -30%;
+    }
+    .background {
+        width: 500px;
+        height: 250px;
+        top: 70%;
+        right: 40%;
+    }
+    .imgEarth {
+        width: 250px;
+        right: 18%;
+        top: 50%;
+    }
+    .links {
+        right: 65%;
+    }
+    .flag_img {
+        width: 80px;
+    }
+    .flag_img_mexico {
+        top: 45%;
+    }
+    .flag_img_chile {
+        top: 40%;
+    }
+    .flag_img_cuba {
+        top: 19%;
+    }
+    .flag_img_kenia {
+        display: none;
+    }
+    .flag_img_sweden {
+        right: 5%;
+        width: 80px;
+    }
+    .flag_img_uk {
+        right: 8%;
+        width: 90px  !important;
+    }
+    .flag_img_spain {
+        width: 80px !important;
+    }
+    .flag_img_usa {
+        right: 2%;
+    }
+    .flag_img_france {
+        top: 72%;
+    }
+}

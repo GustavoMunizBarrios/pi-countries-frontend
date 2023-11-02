@@ -1,0 +1,377 @@
+.navigation {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100vw;
+    height: 110px;
+}
+.navigation > * {
+    margin-right: 80px; /* Ajusta el espacio horizontal entre los elementos */
+    margin-left: 80px;
+}
+.hamburgerMenu {
+    display: none;
+}
+/*  */
+/* ********************************************************************************** */
+/* ********************* Botón de HOME ****************************** */
+/* ********************************************************************************** */
+.home_btn {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    cursor: pointer;
+
+    border: none; 
+    background: none; 
+}
+.home_btn:hover p {
+    color:#FE654F;
+}
+.home_btn p {
+    font-family: 'Roboto', sans-serif;
+    padding-right: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+    color: #1E3231;
+
+}
+.home_btn_img {
+    width: 30px;
+}
+/* ********************************************************************************** */
+/* ********************* INPUT ****************************** */
+/* ********************************************************************************** */
+.search{
+    display: flex;
+}  
+.group {
+    display: flex;
+    line-height: 28px;
+    align-items: center;
+    position: relative;
+    max-width: 190px;
+}
+   
+.input {
+    width: 300px;
+    height: 40px;
+    line-height: 28px;
+    padding: 0 1rem;
+    padding-left: 2.5rem;
+    margin-right: 20px;
+    border: 2px solid #FE654F;
+    border-radius: 8px;
+    outline: none;
+    background-color: #f3f3f4;
+    color: #0d0c22;
+    transition: .3s ease;
+}
+.input::placeholder {
+    color: #9e9ea7;
+}
+.input:focus, input:hover {
+    outline: none;
+    border-color: #FE654F;
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+}
+   
+.icon {
+    position: absolute;
+    left: 1rem;
+    fill: #9e9ea7;
+    width: 1rem;
+    height: 1rem;
+}
+/* ********************************************************************************** */
+/* *********************BOTON INPUT SEARCH ****************************** */
+/* ********************************************************************************** */
+
+.search_btn {
+    width: 110px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-right: 20px;
+    background-color: #FE654F;
+    border-radius: 30px;
+    color: rgb(19, 19, 19);
+    font-weight: 600;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    transition-duration: .2s;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.116);
+    padding-left: 8px;
+    transition-duration: .5s;
+}
+.search_btn_svgIcon {
+    height: 25px;
+    transition-duration: 1.5s;
+}
+.bell path {
+    fill: rgb(19, 19, 19);
+}
+.search_btn:hover {
+    background-color: #FE654F;
+    transition-duration: .5s;
+}
+.search_btn:active {
+    transform: scale(0.97);
+    transition-duration: .2s;
+}
+.search_btn:hover .search_btn_svgIcon {
+    transform: rotate(250deg);
+    transition-duration: 1.5s;
+}
+/* ********************************************************************************** */
+/* *********************BOTON INPUT RESET ****************************** */
+/* ********************************************************************************** */
+.reset_btn {
+    cursor: pointer;
+    color: white;
+    background-color: #1E3231;
+    font-weight: 600;
+    border-radius: 30px;
+    width: 157px;
+    height: 40px;
+    /* font-size: 1rem; */
+    /* line-height: 2rem; */
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+    text-align: center;
+    margin-right: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    border: none;
+}
+.reset_btn:hover {
+    background-color: #333;
+}
+.reset_btn svg {
+    display: inline;
+    width: 1.3rem;
+    height: 1.3rem;
+    margin-right: 0.75rem;
+    color: white;
+}
+.reset_btn:focus svg {
+    animation: spin_357 0.5s linear;
+}
+@keyframes spin_357 {
+    from {
+      transform: rotate(0deg);
+    }
+  
+    to {
+      transform: rotate(360deg);
+    }
+}
+/* ********************************************************************************** */
+/* *********************ENLACES ACTIVITY Y EXIT ****************************** */
+/* ********************************************************************************** */
+.create_btn {
+    font-family: 'Roboto', sans-serif;
+    padding-right: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+    color: #1E3231;
+}
+.create_btn:hover {
+    /* border: 2px solid #FE654F; */
+    /* box-shadow: 3px 5px 51px #FE654F; */
+    color: #FE654F
+}
+/* ********************************************************************************** */
+/* ********************* MENU ICON ****************************** */
+/* ********************************************************************************** */
+.menuIcon {
+    display: none;
+    width: 30px;
+    height: 30px;
+    color: #1E3231;
+}
+.hamburgerMenu {
+   /* display: block; */
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    position: relative; /* Añadir posición relativa */
+    z-index: 30; /* Asegurar que el botón esté en el primer plano */
+    margin-left: 50px;
+}
+
+.menuOverlay {
+    position: absolute;
+    top: 11%;
+    left: 60%;
+/*     width: 100vw;
+    height: 100vh; */
+   /*  background-color: rgba(0, 0, 0, 0.5); */ /* Fondo de superposición semi-transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 30;
+
+    padding: 5px 10px 5px 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+}
+.menuItems {
+    background-color: white;
+    width: 200px;
+    padding: 20px;
+    border-radius: 5px;
+}
+.menuItems a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    margin-bottom: 10px;
+}
+.menuItems a:hover {
+    color: #FE654F
+}
+/* ********************************************************************************** */
+/* ********************* Media Queries ****************************** */
+/* ********************************************************************************** */
+
+@media (max-width: 1660px) {
+
+    .navigation {
+        justify-content: space-between;
+
+    }
+    
+
+}
+@media (max-width: 1290px) {
+    .navigation {
+        margin: 0;
+        justify-content: center;
+    }
+    .navigation > * {
+        margin: 0px;
+    }
+    .home_btn {
+        margin-right: 50px;
+    }
+    
+    .create_btn {
+        display: none;
+        margin: 0;
+    }
+    .menuIcon {
+        display: block;
+    }
+    .hamburgerMenu {
+        display: block;
+        margin-left: 70px;
+    }
+
+}
+@media (max-width: 870px) {
+    .menuOverlay {
+        left: 65%;
+        top: 7%;
+    }
+}
+@media (max-width: 760px) {
+    .home_btn p {
+        display: none;
+    }    
+}
+@media (max-width: 690px) {
+    .hamburgerMenu {
+        margin-left: 40px;
+    }
+    .home_btn {
+        margin-right: 40px;
+    }
+}
+@media (max-width: 620px) {
+    .reset_btn span {
+        display: none;
+    }
+    .reset_btn {
+        width: 55px;
+        margin-right: 0;
+    }
+    .reset_btn svg {
+        margin: 0;
+    }
+}
+@media (max-width: 560px) {
+    .input {
+        width: 122px;
+        margin-right: 0;
+    }
+    .search_btn {
+        margin-right: 40px;
+    }
+}
+@media (max-width: 510px) {
+    .search_btn svg {
+        display: none;
+    }
+    .search_btn {
+        width: 68px;
+    }
+    .home_btn_img {
+        width: 40px;
+    }
+}
+@media (max-width: 450px) {
+    .input {
+        padding: 0 0 0 4px;
+        width: 70px;
+    }
+    .search_btn {
+        margin-right: 30px;
+        margin-left: 10px;
+    }
+    .search_btn_svgIcon {
+        display: none;
+    }
+    .icon {
+        display: none;
+    }
+    .menuOverlay {
+        border-top: 1px solid #0d0c22;
+        top: 100%;
+        left: 60%;
+    }
+    .navigation {
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        background-color: #f3f3f4;
+        border-bottom: 1px solid #0d0c22;
+    }
+
+}
+@media (max-width: 424px) {
+    .home_btn {
+        margin-right: 20px;
+    }
+    .search_btn {
+        margin-left: 5px;
+        margin-right: 15px;
+    }
+}
+
+   
+   
+   
