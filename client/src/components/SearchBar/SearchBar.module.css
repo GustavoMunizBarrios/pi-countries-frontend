@@ -17,7 +17,7 @@
 /* ********************* Botón de HOME ****************************** */
 /* ********************************************************************************** */
 .home_btn {
-    display: flex;
+    display: none;
     align-items: center;
     flex-direction: row-reverse;
     cursor: pointer;
